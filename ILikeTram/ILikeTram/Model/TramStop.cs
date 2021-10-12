@@ -12,5 +12,9 @@ namespace ILikeTram.Model
         public string Name { get; set; }
 
         public string Description { get; set; }
+        public Route Route { get; set; }
+
+        [ForeignKey("Route")]
+        public int? RouteId { get; set; }
     }
 }
